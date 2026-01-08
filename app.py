@@ -1,5 +1,6 @@
 import streamlit as st
 import pickle
+import gzip
 
 # Load saved models
 with open("vectorizer.pkl", "rb") as f:
@@ -8,7 +9,7 @@ with open("vectorizer.pkl", "rb") as f:
 with open("classifier.pkl", "rb") as f:
     classifier = pickle.load(f)
 
-with open("regressor.pkl", "rb") as f:
+with gzip.open("regressor.pkl.gz", "rb") as f:
     regressor = pickle.load(f)
 
 # App title
@@ -44,3 +45,4 @@ if st.button("Predict Difficulty"):
 
         st.success(f"Predicted Difficulty Class: {predicted_class}")
         st.success(f"Predicted Difficulty Score: {predicted_score:.2f}")
+
