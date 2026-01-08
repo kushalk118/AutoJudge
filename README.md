@@ -1,3 +1,5 @@
+Live deployment link 
+https://autojudge-ggzpe7nvufkckhtbmtrmft.streamlit.app/
 # AutoJudge: Predicting Programming Problem Difficulty
 
 ## 📌 Project Overview
@@ -67,3 +69,4 @@ Format used: **JSON Lines (.jsonl)**
 ### 1️⃣ Install Dependencies
 ```bash
 pip install -r requirements.txt
+
